@@ -1,0 +1,17 @@
+#メインアカウント
+Host github #任意のホスト名
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa #メインアカウントの鍵のファイル
+  User git
+  Port 22
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+
+#サブアカウント
+Host github-sub #任意のホスト名
+  HostName github.com
+  IdentityFile ~/.ssh/id_sub_rsa #サブアカウントの鍵のファイル
+  User git
+  Port 22
+  TCPKeepAlive yes
+  IdentitiesOnly yes
